@@ -1,5 +1,4 @@
-pipeline{
-  agent {label 'slave'}
+node ('main') {
  parameters{
     string (name: 'keyname', defaultValue: 'terra', description: ' ')
     string (name: 'SecurityGroup', defaultValue: 'sg-0244e3f85210cc582', description: ' ')
